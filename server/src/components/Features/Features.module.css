@@ -1,0 +1,62 @@
+.featuresSection {
+  padding: 4rem 0;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.iconWrapper {
+  background-color: #ebf4ff;
+  padding: 1rem;
+  border-radius: 9999px;
+}
+
+.icon {
+  color: #2563eb;
+  width: 2rem;
+  height: 2rem;
+}
+
+.featureTitle {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.featureDesc {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  max-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

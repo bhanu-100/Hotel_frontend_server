@@ -1,0 +1,62 @@
+.blogsSection {
+  padding: 4rem 2rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #1e1e1e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #1e1e1e;
+}
+
+.desc {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.readMore {
+  margin-top: 1rem;
+  background: none;
+  border: none;
+  color: #0078ff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.readMore:hover {
+  color: #005fcc;
+  text-decoration: underline;
+}

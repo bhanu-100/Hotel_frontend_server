@@ -1,0 +1,82 @@
+.section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    width: 80%;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.offersContainer {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.offerCard {
+  min-width: 260px;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.offerCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.offerImage {
+  height: 11rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.offerContent {
+  padding: 1rem;
+}
+
+.offerTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.offerDiscount {
+  color: #2563eb; /* blue-600 */
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.offerDesc {
+  color: #4b5563; /* gray-600 */
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.offerButton {
+  margin-top: 1rem;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.offerButton:hover {
+  background-color: #1d4ed8;
+}
